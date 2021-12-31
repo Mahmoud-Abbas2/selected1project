@@ -1,13 +1,3 @@
-'''
-This code is written by Sayan De, from Tec4Tric.
-This code is an example to Classify the Clothing Images from **Fashion_MNIST** dataset using Artificial Neural Network.
-Google Colab link - https://bit.ly/fashion_mnist-ann 
-Website - https://tec4tric.com   
-Facebook - https://www.facebook.com/tec4tric  
-YouTube - https://www.youtube.com/tec4tric   
-Watch this tutorial - https://youtu.be/oHAkK_9UCQ8 
-'''
-
 
 # Importing Packages
 import numpy as np
