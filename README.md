@@ -1,5 +1,6 @@
 That's a link for the image dataset in case of problem:
 https://github.com/zalandoresearch/fashion-mnist
+جروب 13
 
 محمود محمد عباس احمد - 20180570
 محمد ناصر تمام - 20180543
