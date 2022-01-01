@@ -32,7 +32,7 @@ Y = pd.read_csv('F:\Y_data.csv')
 
 X = preprocessing.scale(X)
 
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.25)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.25, random_state=2)
 
 print(X_train.shape)
 
@@ -54,7 +54,6 @@ history_dict=history.history
 
 val_loss, val_acc = model.evaluate(X_test, y_test)
 
-predictions = model.predict(X_test)
 
 model.summary()
 print(history.history.keys())
@@ -74,12 +73,12 @@ plt.legend()
 plt.show()
 
 # get predictions
-y_pred = model.predict(X_train, verbose=2)
+y_pred = model.predict(X_test, verbose=2)
 print("Aho",y_pred.shape)
 print("Aho",y_train.shape)
 # compute confusion matrix with `tf` 
 confusion = tf.math.confusion_matrix(
-              labels = np.argmax(y_train, axis=1),       
+              labels = np.argmax(y_test, axis=1),       
               predictions = np.argmax(y_pred, axis=1),   
               num_classes=2)
 
